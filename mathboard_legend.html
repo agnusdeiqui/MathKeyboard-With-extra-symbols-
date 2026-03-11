@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mathboard Legend</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #f4f4f4;
+      color: #1a1a1a;
+      padding: 40px 20px;
+    }
+    h1 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 6px;
+      letter-spacing: 0.05em;
+    }
+    .subtitle {
+      text-align: center;
+      color: #555;
+      margin-bottom: 32px;
+      font-size: 0.95rem;
+    }
+    .section {
+      background: white;
+      border-radius: 8px;
+      padding: 20px 24px;
+      margin-bottom: 20px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+    }
+    h2 {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #888;
+      margin-bottom: 14px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 6px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th {
+      text-align: left;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #aaa;
+      padding: 4px 8px;
+    }
+    td {
+      padding: 6px 8px;
+      font-size: 1rem;
+      border-bottom: 1px solid #f0f0f0;
+    }
+    tr:last-child td { border-bottom: none; }
+    .key {
+      font-family: monospace;
+      background: #f0f0f0;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      padding: 2px 7px;
+      font-size: 0.85rem;
+      white-space: nowrap;
+    }
+    .sym {
+      font-size: 1.2rem;
+      width: 40px;
+    }
+    .desc { color: #555; font-size: 0.88rem; }
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .notice {
+      background: #fffbe6;
+      border-left: 4px solid #f0c040;
+      padding: 12px 16px;
+      border-radius: 4px;
+      margin-bottom: 20px;
+      font-size: 0.9rem;
+      color: #555;
+    }
+    @media (max-width: 600px) { .two-col { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+
+<h1>Mathboard</h1>
+<p class="subtitle">Press <strong>CapsLock</strong> to toggle math mode on/off &nbsp;·&nbsp; <strong>Shift</strong> for secondary symbols</p>
+
+<div class="notice">
+  All standard keys (letters, numbers, punctuation) type normally when CapsLock is OFF. This keyboard only activates in math mode.
+</div>
+
+<!-- LETTERS -->
+<div class="section">
+  <h2>Letters — Greek Alphabet</h2>
+  <div class="two-col">
+    <table>
+      <tr><th>Key</th><th>Symbol</th><th>Name</th><th>Shift</th><th>Symbol</th></tr>
+      <tr><td><span class="key">a</span></td><td class="sym">α</td><td class="desc">alpha</td><td class="sym">Α</td><td class="desc">Alpha</td></tr>
+      <tr><td><span class="key">b</span></td><td class="sym">β</td><td class="desc">beta</td><td class="sym">Β</td><td class="desc">Beta</td></tr>
+      <tr><td><span class="key">c</span></td><td class="sym">ψ</td><td class="desc">psi</td><td class="sym">Ψ</td><td class="desc">Psi</td></tr>
+      <tr><td><span class="key">d</span></td><td class="sym">δ</td><td class="desc">delta</td><td class="sym">Δ</td><td class="desc">Delta</td></tr>
+      <tr><td><span class="key">e</span></td><td class="sym">ε</td><td class="desc">epsilon</td><td class="sym">Ε</td><td class="desc">Epsilon</td></tr>
+      <tr><td><span class="key">f</span></td><td class="sym">φ</td><td class="desc">phi</td><td class="sym">Φ</td><td class="desc">Phi</td></tr>
+      <tr><td><span class="key">g</span></td><td class="sym">γ</td><td class="desc">gamma</td><td class="sym">Γ</td><td class="desc">Gamma</td></tr>
+      <tr><td><span class="key">h</span></td><td class="sym">η</td><td class="desc">eta</td><td class="sym">Η</td><td class="desc">Eta</td></tr>
+      <tr><td><span class="key">i</span></td><td class="sym">ι</td><td class="desc">iota</td><td class="sym">Ι</td><td class="desc">Iota</td></tr>
+      <tr><td><span class="key">j</span></td><td class="sym">ξ</td><td class="desc">xi</td><td class="sym">Ξ</td><td class="desc">Xi</td></tr>
+      <tr><td><span class="key">k</span></td><td class="sym">κ</td><td class="desc">kappa</td><td class="sym">Κ</td><td class="desc">Kappa</td></tr>
+      <tr><td><span class="key">l</span></td><td class="sym">λ</td><td class="desc">lambda</td><td class="sym">Λ</td><td class="desc">Lambda</td></tr>
+      <tr><td><span class="key">m</span></td><td class="sym">μ</td><td class="desc">mu</td><td class="sym">Μ</td><td class="desc">Mu</td></tr>
+    </table>
+    <table>
+      <tr><th>Key</th><th>Symbol</th><th>Name</th><th>Shift</th><th>Symbol</th></tr>
+      <tr><td><span class="key">n</span></td><td class="sym">ν</td><td class="desc">nu</td><td class="sym">Ν</td><td class="desc">Nu</td></tr>
+      <tr><td><span class="key">o</span></td><td class="sym">ο</td><td class="desc">omicron</td><td class="sym">Ο</td><td class="desc">Omicron</td></tr>
+      <tr><td><span class="key">p</span></td><td class="sym">π</td><td class="desc">pi</td><td class="sym">Π</td><td class="desc">Pi</td></tr>
+      <tr><td><span class="key">q</span></td><td class="sym">⊥</td><td class="desc">perpendicular</td><td class="sym">∥</td><td class="desc">parallel</td></tr>
+      <tr><td><span class="key">r</span></td><td class="sym">ρ</td><td class="desc">rho</td><td class="sym">Ρ</td><td class="desc">Rho</td></tr>
+      <tr><td><span class="key">s</span></td><td class="sym">σ</td><td class="desc">sigma</td><td class="sym">Σ</td><td class="desc">Sigma</td></tr>
+      <tr><td><span class="key">t</span></td><td class="sym">τ</td><td class="desc">tau</td><td class="sym">Τ</td><td class="desc">Tau</td></tr>
+      <tr><td><span class="key">u</span></td><td class="sym">θ</td><td class="desc">theta</td><td class="sym">Θ</td><td class="desc">Theta</td></tr>
+      <tr><td><span class="key">v</span></td><td class="sym">ω</td><td class="desc">omega</td><td class="sym">Ω</td><td class="desc">Omega</td></tr>
+      <tr><td><span class="key">w</span></td><td class="sym">ς</td><td class="desc">final sigma</td><td class="sym">∠</td><td class="desc">angle</td></tr>
+      <tr><td><span class="key">x</span></td><td class="sym">χ</td><td class="desc">chi</td><td class="sym">Χ</td><td class="desc">Chi</td></tr>
+      <tr><td><span class="key">y</span></td><td class="sym">υ</td><td class="desc">upsilon</td><td class="sym">Υ</td><td class="desc">Upsilon</td></tr>
+      <tr><td><span class="key">z</span></td><td class="sym">ζ</td><td class="desc">zeta</td><td class="sym">Ζ</td><td class="desc">Zeta</td></tr>
+    </table>
+  </div>
+</div>
+
+<!-- BACKTICK -->
+<div class="section">
+  <h2>Backtick</h2>
+  <table>
+    <tr><th>Key</th><th>Symbol</th><th>Meaning</th><th>Shift</th><th>Symbol</th><th>Meaning</th></tr>
+    <tr><td><span class="key">`</span></td><td class="sym">∘</td><td class="desc">function composition</td><td class="sym">≈</td><td class="desc">approximately equal</td></tr>
+  </table>
+</div>
+
+<!-- 1 THROUGH = -->
+<div class="section">
+  <h2>Number Row — Calculus &amp; Proof</h2>
+  <table>
+    <tr><th>Key</th><th>Symbol</th><th>Meaning</th><th>Shift</th><th>Symbol</th><th>Meaning</th></tr>
+    <tr><td><span class="key">1</span></td><td class="sym">∂</td><td class="desc">partial derivative</td><td class="sym">∴</td><td class="desc">therefore</td></tr>
+    <tr><td><span class="key">2</span></td><td class="sym">∫</td><td class="desc">integral</td><td class="sym">∵</td><td class="desc">because</td></tr>
+    <tr><td><span class="key">3</span></td><td class="sym">∬</td><td class="desc">double integral</td><td class="sym">≡</td><td class="desc">equivalent</td></tr>
+    <tr><td><span class="key">4</span></td><td class="sym">∇</td><td class="desc">del / nabla</td><td class="sym">√</td><td class="desc">square root</td></tr>
+    <tr><td><span class="key">5</span></td><td class="sym">∆</td><td class="desc">delta / change</td><td class="sym">∈</td><td class="desc">element of</td></tr>
+    <tr><td><span class="key">6</span></td><td class="sym">∝</td><td class="desc">proportional to</td><td class="sym">∉</td><td class="desc">not element of</td></tr>
+    <tr><td><span class="key">7</span></td><td class="sym">∞</td><td class="desc">infinity</td><td class="sym">⊂</td><td class="desc">subset</td></tr>
+    <tr><td><span class="key">8</span></td><td class="sym">±</td><td class="desc">plus-minus</td><td class="sym">⊆</td><td class="desc">subset or equal</td></tr>
+    <tr><td><span class="key">9</span></td><td class="sym">∓</td><td class="desc">minus-plus</td><td class="sym">⊃</td><td class="desc">superset</td></tr>
+    <tr><td><span class="key">0</span></td><td class="sym">°</td><td class="desc">degree</td><td class="sym">⊇</td><td class="desc">superset or equal</td></tr>
+    <tr><td><span class="key">-</span></td><td class="sym">—</td><td class="desc">em dash</td><td class="sym">⇌</td><td class="desc">equilibrium</td></tr>
+    <tr><td><span class="key">=</span></td><td class="sym">≠</td><td class="desc">not equal</td><td class="sym">∪</td><td class="desc">union</td></tr>
+  </table>
+</div>
+
+<!-- [ ] \ -->
+<div class="section">
+  <h2>Brackets — Quantifiers &amp; Implications</h2>
+  <table>
+    <tr><th>Key</th><th>Symbol</th><th>Meaning</th><th>Shift</th><th>Symbol</th><th>Meaning</th></tr>
+    <tr><td><span class="key">[</span></td><td class="sym">∀</td><td class="desc">for all</td><td class="sym">⇒</td><td class="desc">implies</td></tr>
+    <tr><td><span class="key">]</span></td><td class="sym">∃</td><td class="desc">there exists</td><td class="sym">⇐</td><td class="desc">implied by</td></tr>
+    <tr><td><span class="key">\</span></td><td class="sym">∄</td><td class="desc">there does not exist</td><td class="sym">⇔</td><td class="desc">if and only if</td></tr>
+  </table>
+</div>
+
+<!-- ; ' , . / -->
+<div class="section">
+  <h2>Punctuation — Chemistry, Physics &amp; Logic</h2>
+  <table>
+    <tr><th>Key</th><th>Symbol</th><th>Meaning</th><th>Shift</th><th>Symbol</th><th>Meaning</th></tr>
+    <tr><td><span class="key">;</span></td><td class="sym">⁺</td><td class="desc">cation</td><td class="sym">⁻</td><td class="desc">anion</td></tr>
+    <tr><td><span class="key">'</span></td><td class="sym">∧</td><td class="desc">logical and</td><td class="sym">∨</td><td class="desc">logical or</td></tr>
+    <tr><td><span class="key">,</span></td><td class="sym">≤</td><td class="desc">less or equal</td><td class="sym">ℕ</td><td class="desc">natural numbers</td></tr>
+    <tr><td><span class="key">.</span></td><td class="sym">≥</td><td class="desc">greater or equal</td><td class="sym">ℂ</td><td class="desc">complex numbers</td></tr>
+    <tr><td><span class="key">/</span></td><td class="sym">ℓ</td><td class="desc">liter / length</td><td class="sym">ℚ</td><td class="desc">rational numbers</td></tr>
+  </table>
+</div>
+
+<!-- ARROW KEYS -->
+<div class="section">
+  <h2>Arrow Keys</h2>
+  <table>
+    <tr><th>Key</th><th>Symbol</th><th>Meaning</th></tr>
+    <tr><td><span class="key">← Left</span></td><td class="sym">⟨</td><td class="desc">left angle bracket</td></tr>
+    <tr><td><span class="key">→ Right</span></td><td class="sym">⟩</td><td class="desc">right angle bracket</td></tr>
+    <tr><td><span class="key">↑ Up</span></td><td class="sym">∅</td><td class="desc">empty set</td></tr>
+    <tr><td><span class="key">↓ Down</span></td><td class="sym">∩</td><td class="desc">intersection</td></tr>
+  </table>
+</div>
+
+</body>
+</html>
